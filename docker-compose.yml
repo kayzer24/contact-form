@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  database:
+    image: 'mysql:latest'
+    environment:
+      # Credentials are Here only for testing purpose
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: main
+    ports:
+      - '3306:3306'
+
+volumes:
+  db-data:
